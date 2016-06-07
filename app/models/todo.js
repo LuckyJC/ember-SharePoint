@@ -4,4 +4,5 @@ import attr from 'ember-data/attr';
 export default Model.extend({
   title: attr('string'),
   isCompleted: attr('boolean')
+  //createdBy: attr('string')
 });

@@ -6,7 +6,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('todos', {path:'/'}, function() {
+  //needed to add index.html to make the page render in SharePoint
+  this.route('todos', {path:'/index.html'}, function() {
     this.route('complete');
     this.route('incomplete');
   });
